@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Ratchet template page</title>
+
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Include the compiled Ratchet CSS -->
+    <link href="bower_components/ratchet/dist/css/ratchet.css" rel="stylesheet">
+
+    <link href="css/main.css" rel="stylesheet">
+    <!-- Include the compiled Ratchet JS -->
+    <script src="bower_components/ratchet/dist/js/ratchet.js"></script>
+</head>
+<body>
+
+<!-- Make sure all your bars are the first things in your <body> -->
+<header class="bar bar-nav">
+    <a class="icon icon-list pull-right" href="#myPopover"></a>
+    <h1 class="title">邻里</h1>
+</header>
+<div class="bar bar-standard bar-header-secondary">
+    <div class="segmented-control">
+        <a class="control-item active" href="#item1mobile">
+            社区公告
+        </a>
+        <a class="control-item" href="#item2mobile">
+            商家促销
+        </a>
+        <a class="control-item" href="#item3mobile">
+            处理投诉
+        </a>
+    </div>
+</div>
+<!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+<div class="content">
+    <div class="card">
+        <span id="item1mobile" class="control-content active">
+            <ul class="table-view">
+                <li class="table-view-cell media">
+                    <a class="navigate-right">
+                        <img class="media-object pull-left" src="img/police.png">
+                        <div class="media-body">
+                            温馨提示
+                            <p>最近临近年底，请各位住户注意防火防盗，有警情请及时拨打110</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="table-view-cell media">
+                    <a class="navigate-right">
+                        <img class="media-object pull-left" src="img/bus.png">
+                        <div class="media-body">
+                            公交公司
+                            <p>最近红凌路道路施工，施工时间早8点-10点，3路车路线更改为黄河路，请互相转告，谢谢</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="table-view-cell media">
+                    <a class="navigate-right">
+                        <img class="media-object pull-left" src="img/water-faucet.png">
+                        <div class="media-body">
+                            自来水公司
+                            <p>最近红凌路自来水管线重新铺设，附近停水2天，请附近居民提前做好储水准备</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </span>
+        <span id="item2mobile" class="control-content">
+            <ul class="table-view">
+                <li class="table-view-cell media">
+                    <a class="navigate-right">
+                        <img class="media-object pull-left" src="img/store.png">
+                        <div class="media-body">
+                            山姆店
+                            <p>山姆店甄选核桃，促销价2折咯，先到先得，售完为止</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="table-view-cell media">
+                    <a class="navigate-right">
+                        <img class="media-object pull-left" src="img/barbers_chair.png">
+                        <div class="media-body">
+                            秀丽美发
+                            <p>办理秀丽美发会员8折，首次办卡可免费享受一次理发服务</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="table-view-cell media">
+                    <a class="navigate-right">
+                        <img class="media-object pull-left" src="img/dinner1.png">
+                        <div class="media-body">
+                            胖胖鸡公煲
+                            <p>胖胖鸡公煲推出新品，炸鸡翅，烤鸡腿，小食，只需15元就可美餐一顿</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </span>
+        <span id="item3mobile" class="control-content">噢，这只是个测试页面</span>
+    </div>
+    <!--<p class="content-padded">Thanks for downloading Ratchet. This is an example HTML page that's linked up to compiled Ratchet CSS and JS, has the proper meta tags and the HTML structure. Need some more help before you start filling this with your own content? Check out some Ratchet resources:</p>
+    <div class="card">
+        <ul class="table-view">
+            <li class="table-view-cell">
+                <a class="push-right" href="http://goratchet.com">
+                    <strong>Ratchet documentation</strong>
+                </a>
+            </li>
+            <li class="table-view-cell">
+                <a class="push-right" href="https://github.com/twbs/ratchet/">
+                    <strong>Ratchet on Github</strong>
+                </a>
+            </li>
+            <li class="table-view-cell">
+                <a class="push-right" href="https://groups.google.com/forum/#!forum/goratchet">
+                    <strong>Ratchet Google group</strong>
+                </a>
+            </li>
+            <li class="table-view-cell">
+                <a class="push-right" href="https://twitter.com/goratchet">
+                    <strong>Ratchet on Twitter</strong>
+                </a>
+            </li>
+        </ul>
+    </div>-->
+
+    <div id="myPopover" class="popover">
+        <header class="bar bar-nav">
+            <h1 class="title">Popover title</h1>
+        </header>
+        <ul class="table-view">
+            <li class="table-view-cell">距离</li>
+            <li class="table-view-cell">评论</li>
+            <li class="table-view-cell">投诉</li>
+        </ul>
+    </div>
+</div>
+
+<nav class="bar bar-tab">
+    <a class="tab-item active" href="#">
+        <span class="icon icon-home"></span>
+        <span class="tab-label">首页</span>
+    </a>
+    <a class="tab-item" href="#">
+        <span class="icon icon-star-filled"></span>
+        <span class="tab-label">供</span>
+    </a>
+    <a class="tab-item" href="#">
+        <span class="icon icon-star"></span>
+        <span class="tab-label">求</span>
+    </a>
+    <a class="tab-item" href="#">
+        <span class="icon icon-share"></span>
+        <span class="tab-label">地图</span>
+    </a>
+    <a class="tab-item" href="#">
+        <span class="icon icon-person"></span>
+        <span class="tab-label">我的</span>
+    </a>
+</nav>
+
+
+</body>
+</html>
